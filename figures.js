@@ -47,3 +47,39 @@ for (let i = 0; i < 2; i++) {
 }
 console.groupEnd();
 
+// Functions in javascript as encapsulation
+console.group("SquareFunctions");
+function squarePerimeter(side) {
+    return side * 4;
+}
+
+function squareArea(side) {
+    return side * side;
+}
+console.groupEnd();
+
+
+console.group("TriangleFunctions");
+function trianglePerimeter(side1, side2, base) {
+    return side1 + side2 + base;
+}
+
+const triangleArea = (height, base) => {
+    return (base * height) / 2;
+}
+console.groupEnd();
+
+console.group("CircleFunctions");
+const circleDiameter = (radius) => {
+    return radius * 2;
+}
+
+const circlePerimeter = (radius) => {
+    const diameter = circleDiameter(radius);
+    return diameter * PI;
+}
+
+const circleArea = (radius) => {
+    return Math.pow(radius, 2) * PI;
+}
+console.groupEnd();
