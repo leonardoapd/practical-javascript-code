@@ -1,0 +1,74 @@
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 360px;
+    background-color: white;
+    border: 1px solid var(--morning-blue);
+    box-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    overflow: hidden;
+    transition: all .14s ease-out;
+}
+
+.menu {
+    margin-bottom: 1rem;
+}
+
+.menu .option {
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.menu .option button {
+    transition: all .14s ease-out;
+    text-decoration: none;
+    border: none;
+    background-color: #f4f4f0;
+}
+
+.menu .option button:hover {
+    cursor: pointer;
+    transform: translate(0, -.40rem);
+    color: rgba(250, 209, 97);
+}
+
+.hide-card {
+    display: none;
+}
+
+.menu .option-selected button {
+    color: cornflowerblue;
+}
+
+.menu .option-noselected button {
+    color: black;
+}
+
+
+.modal {
+    width: 360px;
+    border-radius: 0.5rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.modal::backdrop {
+    background-color: rgba(250, 209, 97, 0.2);
+}
+
+.modal i {
+    justify-content: flex-end;
+}
+
+.modal i:hover {
+    cursor: pointer;
+}
