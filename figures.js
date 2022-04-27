@@ -292,9 +292,9 @@ const calculateTrianglePerimeter = () => {
     let triangleType = document.getElementById("triangle-type").value;
 
     if (triangleType === "isosceles") {
-        let side1 = document.getElementById('side1').value;
-        let side2 = document.getElementById('side2').value;
-        let base = document.getElementById('base').value;
+        let side1 = Number(document.getElementById('side1').value);
+        let side2 = Number(document.getElementById('side2').value);
+        let base = Number(document.getElementById('base').value);
         let myIsocelesTrianglePerimeter = isocelesTrianglePerimeter(side1, side2, base);
         if (typeof (myIsocelesTrianglePerimeter) === "number") {
             document.getElementById("modal-content").innerHTML = `The perimeter of the triangle is ${myIsocelesTrianglePerimeter}.`;
