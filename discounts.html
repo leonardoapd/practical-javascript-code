@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_template.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="card-container">
+        <div class="card">
+            <h2>Calculate the discount of a product</h2>
+            <form class="flex-column" action="">
+                <label class="form-labels" for="price">
+                    Enter the price of the product:
+                </label>
+                <input class="form-inputs" type="number" name="price" id="price" required
+                    onInput="getDiscountFromPrice()" />
+                <label class="form-labels" for="discount">
+                    Enter the discount percentage:
+                </label>
+                <input class="form-inputs" type="number" name="discount" id="discount" required
+                    oninput="getDiscountFromPrice()" />
+                <label class="form-labels" for="coupon">
+                    Enter the coupon code:
+                </label>
+
+                <div class="flex-center">
+                    <input class="form-inputs" type="text" name="coupon" id="coupon" required
+                        oninput="" />
+                    <button type="button" class="button-coupon button button_res" onclick="applyCoupon()">Coupon</button>
+                </div>
+            </form>
+            <div class="result-container form-inputs" id="results">
+                <p>
+                    <!-- Results of the calculations in javascript -->
+                    Savings:
+                    <span id="savings-result"></span>
+                </p>
+                <p>
+                    <!-- Results of the calculations in javascript -->
+                    Price with discount:
+                    <span id="discount-result-price"></span>
+                </p>
+                <p>
+                    <!-- Results of the calculations in javascript -->
+                    Price with coupon:
+                    <span id="coupon-result"></span>
+                </p>
+                <p id="error-container" class="error-ad">
+                    <!-- paragraph to show an error -->
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./discounts.js"></script>
+</body>
+
+</html>

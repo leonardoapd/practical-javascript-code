@@ -26,20 +26,20 @@ const activateSquareForm = () => {
 
     document.getElementById("figure-container").innerHTML =
         `<div class="card">
-        <h2>Area and Perimeter of a square</h2>
-        <form class="flex-column" action="">
-            <label class="form-labels" for="side">
-                Enter a side value of the square:
-            </label>
-            <input class="form-inputs" type="number" name="side" id="side" required />
-            <button class="button buttons button_sub" type="button" onClick="calculateSquarePerimeter()" name="perimeter">
-                Get the perimeter
-            </button>
-            <button class="button buttons button_sub" type="button" onClick="calculateSquareArea()" name="area">
-                Get the area
-            </button>
-        </form>
-    </div>`;
+            <h2>Area and Perimeter of a square</h2>
+            <form class="flex-column" action="">
+                <label class="form-labels" for="side">
+                    Enter a side value of the square:
+                </label>
+                <input class="form-inputs" type="number" name="side" id="side" required />
+                <button class="button buttons button_sub" type="button" onClick="calculateSquarePerimeter()" name="perimeter">
+                    Get the perimeter
+                </button>
+                <button class="button buttons button_sub" type="button" onClick="calculateSquareArea()" name="area">
+                    Get the area
+                </button>
+            </form>
+        </div>`;
 }
 
 //Clicking the circle button activates the section to perform square operations.
