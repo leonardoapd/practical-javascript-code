@@ -21,7 +21,7 @@
     <section class="menu">
         <ul class="flex-center">
             <li class="option option-selected" id="square-button">
-                <button class="flex-column" type="button" onClick="activateSquareForm()">
+                <button class="flex-column-center" type="button" onClick="activateSquareForm()">
                     <i class="material-symbols-outlined">
                         square
                     </i>
@@ -29,7 +29,7 @@
                 </button>
             </li>
             <li class="option" id="triangle-button">
-                <button class="flex-column" type="button" onClick="activateTriangleForm()">
+                <button class="flex-column-center" type="button" onClick="activateTriangleForm()">
                     <i class="material-symbols-outlined">
                         change_history
                     </i>
@@ -37,7 +37,7 @@
                 </button>
             </li>
             <li class="option" id="circle-button">
-                <button class="flex-column" type="button" onClick="activateCircleForm()">
+                <button class="flex-column-center" type="button" onClick="activateCircleForm()">
                     <i class="material-symbols-outlined">
                         circle
                     </i>
@@ -47,82 +47,17 @@
         </ul>
     </section>
 
-    <section class="card-container" id="square-container">
-        <div class="card">
-            <h2>Area and Perimeter of a square</h2>
-            <form class="flex-column" action="">
-                <label class="form-labels" for="side">
-                    Enter a side value of the square:
-                </label>
-                <input class="form-inputs" type="number" name="side" id="side" required />
-                <button class="button buttons button_sub" type="button" onClick="calculateSquarePerimeter()"
-                    name="perimeter">
-                    Get the perimeter
-                </button>
-                <button class="button buttons button_sub" type="button" onClick="calculateSquareArea()" name="area">
-                    Get the area
-                </button>
-            </form>
-        </div>
+    <section class="card-container" id="figure-container">
+        <!-- Section render with javascript -->
     </section>
-
-    <section class="card-container hide-card" id="triangle-container">
-        <div class="card">
-            <h2>Area and Perimeter of a triangle</h2>
-            <form class="flex-column" action="">
-                <label class="form-labels" for="side1">
-                    Enter side 1 of the triangle:
-                </label>
-                <input class="form-inputs" type="number" name="side1" id="side1" required />
-                <label class="form-labels" for="side2">
-                    Enter side 2 of the triangle:
-                </label>
-                <input class="form-inputs" type="number" name="side2" id="side2" required />
-                <label class="form-labels" for="base">
-                    Enter the base of the triangle:
-                </label>
-                <input class="form-inputs" type="number" name="base" id="base" required />
-                <label class="form-labels" for="height">
-                    Enter the height of the triangle:
-                </label>
-                <input class="form-inputs" type="number" name="height" id="height" required />
-                <button class="button buttons button_sub" type="button" onClick="calculateTrianglePerimeter()"
-                    name="perimeter">
-                    Get the perimeter
-                </button>
-                <button class="button buttons button_sub" type="button" onClick="calculateTriangleArea()" name="area">
-                    Get the area
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <section class="card-container hide-card" id="circle-container">
-        <div class="card">
-            <h2>Area and Perimeter of a circle</h2>
-            <form class="flex-column" action="">
-                <label class="form-labels" for="radius">
-                    Enter the radius of the circle:
-                </label>
-                <input class="form-inputs" type="number" name="radius" id="radius" required />
-                <button class="button buttons button_sub" type="button" onClick="calculateCirclePerimeter()"
-                    name="perimeter">
-                    Get the perimeter
-                </button>
-                <button class="button buttons button_sub" type="button" onClick="calculateCircleArea()" name="area">
-                    Get the area
-                </button>
-            </form>
-        </div>
-    </section>
-
-
 
     <dialog class="modal" id="modal">
         <i class="material-symbols-outlined modal-close" id="close-modal">
             close
         </i>
-        <p id="modal-content"></p>
+        <p id="modal-content">
+            <!-- Results of the calculations in javascript -->
+        </p>
     </dialog>
     <script src="figures.js" type="module"></script>
 </body>
